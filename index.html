@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>hyfBay-Products</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo-wrapper">
+          <img src="hyflogo.png" alt="logo" width="200" height="100" />
+        </div>
+        <div class="heading"><h1>hyfBay- get the Okayest products</h1></div>
+        <div class="menu-container">
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="table-view-control">
+        <form class="form-style">
+          <div class="search">
+            <label>What are you looking for?</label>
+            <input
+              type="text"
+              id="productSearch"
+              placeholder="Search for product"
+            />
+          </div>
+          <div class="price-search">
+            <label>Filter by Maximum price</label>
+            <input type="number" id="priceSearch" placeholder="Maximum price" />
+          </div>
+          <div class="sort">
+            <label>Sort:</label>
+            <select id="sortSelect" name="sortSelect">
+              <option value="Expensive">Cheap first</option>
+              <option value="Cheap">Expensive first</option>
+            </select>
+          </div>
+        </form>
+      </section>
+      <section class="products">
+        <ul></ul>
+      </section>
+      <section class="cart">
+        <h2>Your shopping cart</h2>
+        <div class="total">
+          <p>Total price:<span id="totalPrice"></span></p>
+        </div>
+        <ul></ul>
+      </section>
+    </main>
+
+    <script src="hyfBayHelpers.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
